@@ -1,0 +1,32 @@
+:root {
+  --main-bg: #171717;
+  --secondary-bg: #444444;
+  --buttons: #da0037;
+  --text: #ededed;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  color: var(--buttons) !important;
+  border-bottom-color: var(--buttons) !important;
+}
+
+.customLink:hover {
+  color: var(--buttons) !important;
+}
+
+a:hover {
+  color: var(--buttons) !important;
+  cursor: pointer;
+}
+
+.tabBlock {
+  margin: auto;
+}
+
+section {
+  word-wrap: break-word;
+}

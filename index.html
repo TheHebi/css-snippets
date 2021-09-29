@@ -1,12 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Snippets</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code Snippets</title>
+  </head>
+  <body>
+    <h1>Code Snippets</h1>
+    <section>
+      <h2>
+        Have you ever had a hard time recalling the proper symantics for your code? These snippets will help you save time with generic use code!
+      </h2>
+    </section>
+
+    <main class="container">
+        <div class="tabBlock row justify-content-between">
+            <ul>
+            <button type="button" class="btn btn-primary active" id="cssTab">CSS</button>
+            <button type="button" class="btn btn-primary" id="bsTab">Bootstrap</button>
+            <button type="button" class="btn btn-primary" id="jsTab">JavaScript</button>
+            <button type="button" class="btn btn-primary" id="algTab">JS Algorithims</button>
+        </ul>
+            </div>
+      <section class="card-container row">
+    <div class="css" id="css">
+        <section class="card col-6">
+          <h4>Flex-Box Row</h4>
+          <p>Setup flex box properties with a row wrap</p>
+          <pre>
+            <code class="code">
+.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+            </code>
+          </pre>
+        </section>
+        <section class="card col-6">
+          <h4>Flex-Box Column</h4>
+          <p>Setup flex box properties with a column wrap</p>
+          <pre>
+                <code class="code">
+.column {
+display: flex;
+flex-direction: column;
+}
+                </code>
+          </pre>
+        </section>
+        <section class="card col-6">
+          <h4>Grid Layout</h4>
+          <p>Setup a 12 column grid layout using CSS</p>
+          <pre>
+                <code class="code">
+.grid {
+display: grid;
+width: 100%;
+grid-template-column;
+repeat(12, 1fr);
+}
+                </code>
+          </pre>
+        </section>
+        <section class="card col-6">
+          <h4>Linear Gradient</h4>
+          <p>Setup a linear gradient going from top to bottom</p>
+          <pre>
+                <code class="code">
+.linear-gradient-background {
+background-image: linear-
+gradient(
+rgba(232, 102, 236, 0.3) 0%,
+rgba(232, 102, 236, 0.6)
+100%
+);
+}
+                </code>
+          </pre>
+        </section>
+        <section class="card col-6">
+          <h4>Box Transition Glow</h4>
+          <p>Setup box shadow and glows on hover</p>
+          <pre>
+                <code class="code">
+.code-card .code-header {
+border-radius: 8px;
+transition: all 0.5s ease-in-
+out;
+}
+.code-card:hover .card-header {
+box-shadow: inset 0px 0px 8px
+rgba(232, 102, 1). 0 0 15px
+rgba(232, 102, 236, 1);
+}
+                </code>
+          </pre>
+        </section>
+        <section class="card col-6">
+          <h4>Card Tile Overlay</h4>
+          <p>Use position properties to raise an element higher than its initial starting point</p>
+          <pre>
+                <code class="code">
+.card-header {
+position: relative;
+margin-top: -20px;
+}
+                </code>
+          </pre>
+        </section>
+    </div>
+    <div class="bootstrap hidden" id="bootstrap">
+        <section class="card col-6">
+            <h4>Check Box</h4>
+            <p>The first div is a default checkbox, the second div is a pre-checked check box</p>
+            <pre>
+                  <code class="code">
+&ltdiv class="form-check"&gt
+    &ltinput class="form-check-input" type="checkbox" value="" id="flexCheckDefault"&gt
+    &ltlabel class="form-check-label" for="flexCheckDefault"&gt
+        Default checkbox
+    &lt/label&gt
+&lt/div&gt
+&ltdiv class="form-check"&gt
+    &ltinput class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked&gt
+    &ltlabel class="form-check-label" for="flexCheckChecked"&gt
+        Checked checkbox
+    &lt/label&gt
+&lt/div&gt
+                  </code>
+            </pre>
+          </section>
+          <section class="card col-6">
+            <h4>Bootstrap Columns</h4>
+            <p>How to setup columns with bootstrap</p>
+            <pre>
+                  <code class="code">
+&ltdiv class="container"&gt
+    &ltdiv class="row"&gt
+        &ltdiv class="col-6"&gt
+            One of two columns
+        &lt/div&gt
+        &ltdiv class="col-6"&gt
+            One of two columns
+        &lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+                  </code>
+            </pre>
+          </section>
+          <section class="card col-6">
+            <h4>Modals</h4>
+            <p>How to setup a modal with bootstrap</p>
+            <pre>
+                  <code class="code">
+&ltdiv class="modal" tabindex="-1"&gt
+    &ltdiv class="modal-dialog"&gt
+        &ltdiv class="modal-content"&gt
+            &ltdiv class="modal-header"&gt
+                &lth5 class="modal-title"&gtModal title&lt/h5&gt
+                    &ltbutton type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt&lt/button&gt
+            &lt/div&gt
+            &ltdiv class="modal-body"&gt
+                &ltp&gtModal body text goes here.&lt/p&gt
+            &lt/div&gt
+                &ltdiv class="modal-footer"&gt
+                    &ltbutton type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gtClose&lt/button&gt
+                    &ltbutton type="button" class="btn btn-primary"&gtSave changes&lt/button&gt
+                &lt/div&gt
+            &lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+                  </code>
+            </pre>
+          </section>
+          <section class="card col-6">
+            <h4>Carousel</h4>
+            <p>How to setup a carousel with bootstrap</p>
+            <pre>
+                  <code class="code">
+&ltdiv id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"&gt
+    &ltdiv class="carousel-inner"&gt
+        &ltdiv class="carousel-item active"&gt
+            &ltimg src="..." class="d-block w-100" alt="..."&gt
+        &lt/div&gt
+        &ltdiv class="carousel-item"&gt
+            &ltimg src="..." class="d-block w-100" alt="..."&gt
+        &lt/div&gt
+        &ltdiv class="carousel-item"&gt
+            &ltimg src="..." class="d-block w-100" alt="..."&gt
+        &lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+                  </code>
+            </pre>
+          </section>
+          <section class="card col-6">
+            <h4>Navbar & Tabs</h4>
+            <p>How to setup a navbar with tabs using bootstrap</p>
+            <pre>
+                  <code class="code">
+&ltul class="nav"&gt
+    &ltli class="nav-item"&gt
+        &lta class="nav-link active" aria-current="page" href="#"&gtActive&lt/a&gt
+    &lt/li&gt
+    &ltli class="nav-item"&gt
+        &lta class="nav-link" href="#"&gtLink&lt/a&gt
+    &lt/li&gt
+    &ltli class="nav-item"&gt
+        &lta class="nav-link" href="#"&gtLink&lt/a&gt
+    &lt/li&gt
+    &ltli class="nav-item"&gt
+        &lta class="nav-link disabled"&gtDisabled&lt/a&gt
+    &lt/li&gt
+&lt/ul&gt
+                  </code>
+            </pre>
+          </section>
+          <section class="card col-6">
+            <h4>Spinners</h4>
+            <p>How to setup a spinner with bootstrap. Use this to indicate an element is loading</p>
+            <pre>
+                  <code class="code">
+&ltdiv class="spinner-border" role="status"&gt
+    &ltspan class="visually-hidden"&gtLoading...&lt/span&gt
+&lt/div&gt
+                  </code>
+            </pre>
+          </section>
+      </div>
+    </div>
+    <div class="javascript hidden" id="javascript">
+        <section class="card col-6">
+            <h4>For Loop</h4>
+            <p>Quick and easy for loop</p>
+            <pre>
+                  <code class="code">
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+}
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>String Reverse</h4>
+            <p>Vanilla JavaScript selector for DOM manipulation</p>
+            <pre>
+                  <code class="code">
+var el = document.querySelector(".myclass");
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>If Statement</h4>
+            <p>If condition is met, run the first block of code, else run the second block of code</p>
+            <pre>
+                  <code class="code">
+if (condition) {
     
-</body>
+} else {
+                        
+}
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>On Click</h4>
+            <p>Add an onClick event listener using DOM manipulation</p>
+            <pre>
+                  <code class="code">
+document.querySelector(selector).addEventListener("click", action);
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>Remove Class</h4>
+            <p>Removes a class using DOM manipulation</p>
+            <pre>
+                  <code class="code">
+document.getElementById(selector).classList.remove(class name);
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>Add Class</h4>
+            <p>Adds a class using DOM manipulation</p>
+            <pre>
+                  <code class="code">
+document.getElementById("genreSearch").classList.add("hidden");
+                  </code>
+            </pre>
+          </section>
+    </div>
+    <div class="javascript-algs hidden" id="algs">
+        <section class="card col-6">
+            <h4>FizzBuzz</h4>
+            <p>Console logs Fizz if the number is divisible by 3, Buzz if the number is divisible by 5, FizzBuzz if the number is divisible by 15, otherwise it logs the number</p>
+            <pre>
+                  <code class="code">
+const fizzBuzz = function(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] % 15 ===0){
+            console.log("FizzBuzz")
+        }else if(arr[i] % 5 ===0){
+            console.log("Buzz")
+        }else if(arr[i] % 3 ===0){
+            console.log("Fizz")
+        }else{
+            console.log(arr[i])
+        }
+    }
+};
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>Max Num</h4>
+            <p>Finds the largest number in an array</p>
+            <pre>
+                  <code class="code">
+var maxNum = function(arr) {
+    let largestNum = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]> largestNum){
+            largestNum = arr[i]
+        }
+    }
+    console.log(Math.max(...arr),largestNum)
+    return largestNum
+};
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>Bubble Sort</h4>
+            <p>Runs through an array checking to see which number is larger. Goes from left to right, moving the smaller numbers to the left</p>
+            <pre>
+                  <code class="code">
+const bubbleSort = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i+1; j < array.length; j++) {
+            if(array[i]>array[j]){
+            let temp = array[i];
+            array[i] = array[j]
+            array[j]=temp
+            }
+        }
+    }return array
+};
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>Are All Equal</h4>
+            <p>Checks if all items in an array are equal to eachother</p>
+            <pre>
+                  <code class="code">
+const areAllEqual = array => array.every(item => item === array[0]);
+let check1 = areAllEqual([3, 5, 2]); // false
+let check2 = allEqual([3, 3, 3]); // true
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>Find and Replace</h4>
+            <p>Replaces a word in a string with another</p>
+            <pre>
+                  <code class="code">
+const findAndReplace = (string, wordToFind, wordToReplace) => string.split(wordToFind).join(wordToReplace);
+let result = findAndReplace(‘I like banana’, ‘banana’, ‘apple’); // I like apple
+                  </code>
+            </pre>
+          </section>
+        <section class="card col-6">
+            <h4>String Reverse</h4>
+            <p>Turns a given string into an array of letters, reverses it, then joins the array of letters back into a string</p>
+            <pre>
+                  <code class="code">
+const reverseString = str => […str].reverse().join(‘’);
+let a = reverseString(‘Have a nice day!’); // !yad ecin a evaH
+                  </code>
+            </pre>
+          </section>
+    </div>
+    </section>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
 </html>
