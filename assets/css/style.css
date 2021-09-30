@@ -93,6 +93,18 @@ bottom:   0;
 pre{
   margin-bottom: 50px;
 }
+.far { 
+  font-family: 'FontAwesome' !important; 
+}
+/* #scrollBtn{
+  display: none;
+} */
+
+/* @media screen and(max-width: 992px){
+  #scrollBtn{
+    display: block;
+  }
+} */
 
 @media only screen and (max-width: 600px) {
   main{

@@ -25,7 +25,6 @@ const changeTab = function (event) {
 
 const copyText = async function(event){
   try{
-    console.log(event.target.parentElement.children[2].children[0].textContent)
     const text = event.target.parentElement.children[2].children[0].textContent
     await navigator.clipboard.writeText(text)
     alert("Snippet Copied To Clipboard")
@@ -38,15 +37,23 @@ const copyText = async function(event){
 
 const addClick = function(){
   const copyBtn = document.querySelectorAll('.copy-text')
-console.log(copyBtn)
   for (let i = 0; i < copyBtn.length; i++) {
     copyBtn[i].addEventListener('click', copyText)
-    console.log(copyBtn[1])
     
   }
 }
 
 addClick()
+
+const scrollToTop = function() {
+  let rootElement = document.documentElement
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+document.querySelector("#scrollBtn").addEventListener("click", scrollToTop)
 
   // Adds event listeners to each tab button
   document.querySelector("#cssTab").addEventListener("click", changeTab);
