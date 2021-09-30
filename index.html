@@ -9,25 +9,27 @@
     <title>Code Snippets</title>
   </head>
   <body>
-    <h1>Code Snippets</h1>
-    <section>
-      <h2>
-        Have you ever had a hard time recalling the proper symantics for your code? These snippets will help you save time with generic use code!
-      </h2>
-    </section>
+    <header>
+      <h1>Code Snippets</h1>
+      <section>
+        <h2>
+          Have you ever had a hard time recalling the proper symantics for your code? These snippets will help you save time with generic use code!
+        </h2>
+      </section>
+    </header>
 
-    <main class="container">
+  <main class="container">
         <div class="tabBlock row justify-content-between">
             <ul>
-            <button type="button" class="btn btn-primary active" id="cssTab">CSS</button>
-            <button type="button" class="btn btn-primary" id="bsTab">Bootstrap</button>
-            <button type="button" class="btn btn-primary" id="jsTab">JavaScript</button>
-            <button type="button" class="btn btn-primary" id="algTab">JS Algorithims</button>
-        </ul>
-            </div>
-      <section class="card-container row">
-    <div class="css" id="css">
-        <section class="card col-6">
+              <button type="button" class="btn active" id="cssTab">CSS</button>
+              <button type="button" class="btn" id="bsTab">Bootstrap</button>
+              <button type="button" class="btn" id="jsTab">JavaScript</button>
+              <button type="button" class="btn" id="algTab">Algorithims</button>
+            </ul>
+        </div>
+    <section class="card-container">
+    <div class="css row" id="css">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
           <h4>Flex-Box Row</h4>
           <p>Setup flex box properties with a row wrap</p>
           <pre>
@@ -39,8 +41,9 @@ flex-wrap: wrap;
 }
             </code>
           </pre>
+          <button type="button" class="btn copy-text">Copy Snippet</button>
         </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
           <h4>Flex-Box Column</h4>
           <p>Setup flex box properties with a column wrap</p>
           <pre>
@@ -51,8 +54,9 @@ flex-direction: column;
 }
                 </code>
           </pre>
+          <button type="button" class="btn copy-text">Copy Snippet</button>
         </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
           <h4>Grid Layout</h4>
           <p>Setup a 12 column grid layout using CSS</p>
           <pre>
@@ -65,8 +69,9 @@ repeat(12, 1fr);
 }
                 </code>
           </pre>
+          <button type="button" class="btn copy-text">Copy Snippet</button>
         </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
           <h4>Linear Gradient</h4>
           <p>Setup a linear gradient going from top to bottom</p>
           <pre>
@@ -81,8 +86,9 @@ rgba(232, 102, 236, 0.6)
 }
                 </code>
           </pre>
+          <button type="button" class="btn copy-text">Copy Snippet</button>
         </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
           <h4>Box Transition Glow</h4>
           <p>Setup box shadow and glows on hover</p>
           <pre>
@@ -99,8 +105,9 @@ rgba(232, 102, 236, 1);
 }
                 </code>
           </pre>
+          <button type="button" class="btn copy-text">Copy Snippet</button>
         </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
           <h4>Card Tile Overlay</h4>
           <p>Use position properties to raise an element higher than its initial starting point</p>
           <pre>
@@ -111,10 +118,11 @@ margin-top: -20px;
 }
                 </code>
           </pre>
+          <button type="button" class="btn copy-text">Copy Snippet</button>
         </section>
     </div>
-    <div class="bootstrap hidden" id="bootstrap">
-        <section class="card col-6">
+    <div class="bootstrap hidden row" id="bootstrap">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Check Box</h4>
             <p>The first div is a default checkbox, the second div is a pre-checked check box</p>
             <pre>
@@ -133,26 +141,28 @@ margin-top: -20px;
 &lt/div&gt
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-          <section class="card col-6">
+          <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Bootstrap Columns</h4>
             <p>How to setup columns with bootstrap</p>
             <pre>
                   <code class="code">
 &ltdiv class="container"&gt
     &ltdiv class="row"&gt
-        &ltdiv class="col-6"&gt
+        &ltdiv class="col-lg-3 col-md-5 col-sm-10 mx-3 my-3"&gt
             One of two columns
         &lt/div&gt
-        &ltdiv class="col-6"&gt
+        &ltdiv class="col-lg-3 col-md-5 col-sm-10 mx-3 my-3"&gt
             One of two columns
         &lt/div&gt
     &lt/div&gt
 &lt/div&gt
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-          <section class="card col-6">
+          <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Modals</h4>
             <p>How to setup a modal with bootstrap</p>
             <pre>
@@ -176,8 +186,9 @@ margin-top: -20px;
 &lt/div&gt
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-          <section class="card col-6">
+          <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Carousel</h4>
             <p>How to setup a carousel with bootstrap</p>
             <pre>
@@ -197,8 +208,9 @@ margin-top: -20px;
 &lt/div&gt
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-          <section class="card col-6">
+          <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Navbar & Tabs</h4>
             <p>How to setup a navbar with tabs using bootstrap</p>
             <pre>
@@ -219,8 +231,9 @@ margin-top: -20px;
 &lt/ul&gt
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-          <section class="card col-6">
+          <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Spinners</h4>
             <p>How to setup a spinner with bootstrap. Use this to indicate an element is loading</p>
             <pre>
@@ -230,11 +243,12 @@ margin-top: -20px;
 &lt/div&gt
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
       </div>
     </div>
-    <div class="javascript hidden" id="javascript">
-        <section class="card col-6">
+    <div class="javascript hidden row" id="javascript">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>For Loop</h4>
             <p>Quick and easy for loop</p>
             <pre>
@@ -244,17 +258,19 @@ for (let i = 0; i < array.length; i++) {
 }
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>String Reverse</h4>
             <p>Vanilla JavaScript selector for DOM manipulation</p>
             <pre>
                   <code class="code">
-var el = document.querySelector(".myclass");
+const el = document.querySelector(".myclass");
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>If Statement</h4>
             <p>If condition is met, run the first block of code, else run the second block of code</p>
             <pre>
@@ -266,8 +282,9 @@ if (condition) {
 }
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>On Click</h4>
             <p>Add an onClick event listener using DOM manipulation</p>
             <pre>
@@ -275,8 +292,9 @@ if (condition) {
 document.querySelector(selector).addEventListener("click", action);
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Remove Class</h4>
             <p>Removes a class using DOM manipulation</p>
             <pre>
@@ -284,8 +302,9 @@ document.querySelector(selector).addEventListener("click", action);
 document.getElementById(selector).classList.remove(class name);
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Add Class</h4>
             <p>Adds a class using DOM manipulation</p>
             <pre>
@@ -293,10 +312,11 @@ document.getElementById(selector).classList.remove(class name);
 document.getElementById("genreSearch").classList.add("hidden");
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
     </div>
-    <div class="javascript-algs hidden" id="algs">
-        <section class="card col-6">
+    <div class="javascript-algs hidden row" id="algs">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>FizzBuzz</h4>
             <p>Console logs Fizz if the number is divisible by 3, Buzz if the number is divisible by 5, FizzBuzz if the number is divisible by 15, otherwise it logs the number</p>
             <pre>
@@ -316,8 +336,9 @@ const fizzBuzz = function(arr) {
 };
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Max Num</h4>
             <p>Finds the largest number in an array</p>
             <pre>
@@ -334,8 +355,9 @@ var maxNum = function(arr) {
 };
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Bubble Sort</h4>
             <p>Runs through an array checking to see which number is larger. Goes from left to right, moving the smaller numbers to the left</p>
             <pre>
@@ -353,8 +375,9 @@ const bubbleSort = (array) => {
 };
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Are All Equal</h4>
             <p>Checks if all items in an array are equal to eachother</p>
             <pre>
@@ -364,8 +387,9 @@ let check1 = areAllEqual([3, 5, 2]); // false
 let check2 = allEqual([3, 3, 3]); // true
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>Find and Replace</h4>
             <p>Replaces a word in a string with another</p>
             <pre>
@@ -374,8 +398,9 @@ const findAndReplace = (string, wordToFind, wordToReplace) => string.split(wordT
 let result = findAndReplace(‘I like banana’, ‘banana’, ‘apple’); // I like apple
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
-        <section class="card col-6">
+        <section class="card col-lg-3 col-md-5 col-sm-10 mx-3 my-3">
             <h4>String Reverse</h4>
             <p>Turns a given string into an array of letters, reverses it, then joins the array of letters back into a string</p>
             <pre>
@@ -384,10 +409,11 @@ const reverseString = str => […str].reverse().join(‘’);
 let a = reverseString(‘Have a nice day!’); // !yad ecin a evaH
                   </code>
             </pre>
+            <button type="button" class="btn copy-text">Copy Snippet</button>
           </section>
     </div>
     </section>
-    </main>
+  </main>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>

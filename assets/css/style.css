@@ -1,8 +1,13 @@
 :root {
-  --main-bg: #171717;
-  --secondary-bg: #444444;
+  --main-bg: #444444;
+  --secondary-bg: black;
   --buttons: #da0037;
-  --text: #ededed;
+  --text: #aa00ff;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text);
 }
 
 .hidden {
@@ -29,4 +34,69 @@ a:hover {
 
 section {
   word-wrap: break-word;
+}
+
+main {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  max-width: 95vw !important;
+  justify-content: center !important;
+}
+
+h1 {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.tabBlock {
+  justify-content: center !important;
+  margin-bottom: 0.5em;
+}
+
+button {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  border-radius: 25px !important;
+  background-color: var(--secondary-bg) !important;
+  color: var(--text) !important;
+  margin-top: 10px !important;
+}
+
+.card {
+  background-color: var(--secondary-bg);
+  border-radius: 25px;
+  border-style: dashed;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+h4 {
+  position: relative;
+  margin-top: -10px;
+  border: dashed;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+h2{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.copy-text{
+position: absolute;
+right:    0;
+bottom:   0;
+}
+
+pre{
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  main{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
