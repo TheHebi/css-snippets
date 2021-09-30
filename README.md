@@ -1,5 +1,7 @@
 # Code Snippets
 
+Deployed <a href="https://thehebi.github.io/css-snippets/">here</a>
+
 ![badmath](https://img.shields.io/github/repo-size/TheHebi/css-snippets)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
